@@ -1,0 +1,23 @@
+@import "@/styles/main.scss";
+
+//App
+::-webkit-scrollbar {
+    width: 8px;
+    height: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+    -webkit-border-radius: 6px;
+    border-radius: 0px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* -webkit-border-radius: 6px;
+    border-radius: 2px; */
+    background: rgba(13, 71, 161, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(13, 71, 161, 0.8);
+}
