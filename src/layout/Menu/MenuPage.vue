@@ -5,11 +5,11 @@
                 <v-img v-if="!mini" src="@/assets/wda.png" height="10.25em"></v-img>
                 <v-img v-if="mini" src="@/assets/logo.svg" height="1.5em"></v-img>
             </v-list-item>
-            <v-list-item-title class="titleMenu my-3">
-                <div :class="mini ? 'textMenuHidden ml-4' : 'textMenu ml-4'">
+            <v-list-item-title class="menu-title my-3">
+                <div :class="mini ? 'hidden-menu-text ml-4' : 'textMenu ml-4'">
                     <h3 style="font-size: 1.25em">Menu</h3>
                 </div>
-                <div class="mr-3" id="iconMenu">
+                <div class="mr-3 menu-icon">
                     <v-btn icon @click.stop="mini = !mini">
                         <v-icon :style="mini ? 'transform: rotate(180deg)' : ''">mdi-menu-open</v-icon>
                     </v-btn>
