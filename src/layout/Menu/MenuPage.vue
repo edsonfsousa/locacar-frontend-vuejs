@@ -2,8 +2,8 @@
     <v-navigation-drawer :mini-variant="mini" permanent>
         <v-list>
             <v-list-item>
-                <v-img v-if="!mini" src="@/assets/images/Logo-Superare.png" height="10.25em"></v-img>
-                <v-img v-if="mini" src="@/assets/images/Logo-Superare-Simbolo.png" height="1.5em"></v-img>
+                <v-img v-if="!mini" src="@/assets/wda.png" height="10.25em"></v-img>
+                <v-img v-if="mini" src="@/assets/logo.svg" height="1.5em"></v-img>
             </v-list-item>
             <v-list-item-title class="titleMenu my-3">
                 <div :class="mini ? 'textMenuHidden ml-4' : 'textMenu ml-4'">
@@ -49,36 +49,13 @@ export default {
     },
     computed: {
         function() {
-            if (localStorage.getItem('role') == 'ROLE_ADMIN') {
-                this.items = [
-                    { text: 'Painel Principal', icon: 'mdi-home-outline', color: '#7764E4', to: '/' },
-                    { text: 'Calendário', icon: 'mdi-calendar-blank-outline', color: '#F53C56', to: '/calendario' },
-                    { text: 'Atendimento', icon: 'mdi-file-document-outline', color: '#FB6340', to: '/atendimento' },
-                    { text: 'Paciente', icon: 'mdi-account-outline', color: '#11CDEF', to: '/paciente' },
-                    { text: 'Lembrete', icon: 'mdi-comment-outline', color: '#FEB969', to: '/lembrete' },
-                    {
-                        text: 'Relatório',
-                        icon: 'mdi-file-document-multiple-outline',
-                        color: '#00659F',
-                        to: '/relatorio'
-                    },
-                    { text: 'Gerenciar', icon: 'mdi-cog-outline', color: '#585858', to: '/gerencia' }
-                ];
-            }
-            if (localStorage.getItem('role') == 'ROLE_PROFESSIONAL') {
-                this.items = [
-                    { text: 'Painel Principal', icon: 'mdi-home-outline', color: '#7764E4', to: '/home' },
-                    { text: 'Agenda', icon: 'mdi-calendar-blank-outline', color: '#F53C56', to: '/agenda' },
-                    { text: 'Consultas', icon: 'mdi-file-document-outline', color: '#FB6340', to: '/consultas' },
-                    {
-                        text: 'Pacientes',
-                        icon: 'mdi-account-outline',
-                        color: '#11CDEF',
-                        to: '/profissionais/pacientes'
-                    },
-                    { text: 'Perfil', icon: 'mdi-cog-outline', color: '#585858', to: '/perfil' }
-                ];
-            }
+            this.items = [
+                { text: 'Dashboard', icon: 'mdi-chart-areaspline', color: '#11CDEF', to: '/' },
+                { text: 'Clientes', icon: 'mdi-account-multiple', color: '#11CDEF', to: '/clientes' },
+                { text: 'Carros', icon: 'mdi-car', color: '#11CDEF', to: '/carros' },
+                { text: 'Marcas', icon: 'mdi-car-brake-hold', color: '#11CDEF', to: '/marcas' },
+                { text: 'Aluguel', icon: 'mdi-key', color: '#11CDEF', to: '/aluguel' }
+            ];
         }
     }
 };

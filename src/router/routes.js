@@ -1,17 +1,35 @@
 // general Views
-const NotFound = () => import(/* webpackChunkName: "notfound" */ '@/pages/NotFoundPage.vue');
-const HomePage = () => import(/* webpackChunkName: "homepage" */ '@/pages/HomePage.vue');
+const DashboardPage = () => import(/* webpackChunkName: "dashboardpage" */ '@/pages/DashboardPage.vue');
+const CustomersPage = () => import(/* webpackChunkName: "customerspage" */ '@/pages/CustomersPage.vue');
+const CarPage = () => import(/* webpackChunkName: "carpage" */ '@/pages/CarPage.vue');
+const BrandsPage = () => import(/* webpackChunkName: "brandspage" */ '@/pages/BrandsPage.vue');
+const RentPage = () => import(/* webpackChunkName: "rentpage" */ '@/pages/RentPage.vue');
 
 const routes = [
     {
         path: '/',
-        name: 'homepage',
-        component: HomePage
+        name: 'dashboardpage',
+        component: DashboardPage
     },
     {
-        path: '*',
-        name: 'notFound',
-        component: NotFound
+        path: '/clientes',
+        name: 'customerspage',
+        component: CustomersPage
+    },
+    {
+        path: '/carros',
+        name: 'carpage',
+        component: CarPage
+    },
+    {
+        path: '/marcas',
+        name: 'brandspage',
+        component: BrandsPage
+    },
+    {
+        path: '/aluguel',
+        name: 'rentpage',
+        component: RentPage
     }
 ];
 

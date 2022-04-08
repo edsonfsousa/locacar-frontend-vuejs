@@ -1,6 +1,13 @@
 @import "@/styles/main.scss";
 
 //App
+.menuWidth {
+    width: auto;
+}
+.viewWidth {
+    width: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 12px;
