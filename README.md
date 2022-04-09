@@ -1,4 +1,5 @@
-# locacar
+![GitHub repo size](https://img.shields.io/github/repo-size/edsonfsousa/locacar-frontend-vuejs)
+# Locacar Frontend
 
 ## Project setup
 ```
