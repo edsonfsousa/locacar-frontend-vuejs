@@ -32,7 +32,7 @@ docker image build -t edsonfsousa/locacar-frontend:v1 .
 ```
 
 ```
-docker container run -d -p 8084:80 --name locacar-frontend edsonfsousa/locacar-frontend:v1
+docker container run -d -p 8089:80 --name locacar-frontend edsonfsousa/locacar-frontend:v1
 ```
 
 ## Commands used to deploy the application with docker-compose:
@@ -52,7 +52,7 @@ docker compose up
 ---
 
 If you want, you can contribute in
-[issue tracker](https://github.com/wda-trainee/startuplog-frontend/issues/new/choose).
+[issue tracker](https://github.com/edsonfsousa/locacar-frontend-vuejs/issues/new).
 
 Developed by
 [Edson Fernandes](https://github.com/edsonfsousa).

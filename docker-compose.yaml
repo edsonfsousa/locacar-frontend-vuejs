@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    locacar-frontend:
+        container_name: locacar-frontend
+        image: wda/startuplog-frontend:v1
+        build: .
+        ports:
+            - '8089:80'
